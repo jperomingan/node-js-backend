@@ -259,3 +259,14 @@ let obj4 = { x: 20, y: "hello" };
 const cloneObj3 = { ...obj4 };
 
 console.log(cloneObj1, cloneObj2, cloneObj3);
+
+// 20.) Get character from string
+let str1 = "jscurious.com";
+
+// Longhand
+str1.charAt(2);
+
+// Shorthand
+str1[2];
+
+console.log(str[2]);
