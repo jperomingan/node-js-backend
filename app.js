@@ -193,3 +193,27 @@ Math.max(...arr); // 15
 Math.min(...arr); // 2
 
 console.log(arr, Math.max(...arr), Math.min(...arr));
+
+// 17.) For loop
+let arr1 = [10, 20, 30, 40];
+
+// Longhand
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+}
+
+// Shorthand
+// for of loop
+for (const val of arr) {
+  console.log(val);
+}
+
+// for in loop
+for (const index in arr) {
+  console.log(`index: ${index} and value: ${arr[index]}`);
+}
+
+let obj3 = { x: 20, y: 50 };
+for (const key in obj3) {
+  console.log(obj3[key]);
+}
