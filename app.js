@@ -185,3 +185,11 @@ const floor1 = Math.floor(6.8); //6
 const floor2 = ~~6.8; // 6
 
 console.log(floor1, floor2);
+
+// 16.) Find max and min number in array
+// Shorthand
+const arr = [2, 8, 15, 4];
+Math.max(...arr); // 15
+Math.min(...arr); // 2
+
+console.log(arr, Math.max(...arr), Math.min(...arr));
