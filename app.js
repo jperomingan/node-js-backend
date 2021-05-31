@@ -98,3 +98,18 @@ console.log("You got a missed call from " + number + " at " + time);
 
 // Shorthand
 console.log("You got a missed call from " + number + " at " + time);
+
+// 9.) Multi-line String
+
+// Longhand
+console.log(
+  "JavaScript, often abbreviated as JS, is a\n" +
+    "programming language that conforms to the \n" +
+    "ECMAScript specification. JavaScript is high-level, \n" +
+    "often just-in-time compiled, and multi-paradigm"
+);
+
+//Shorthand
+console.log(`JavaScript, often abbreviated as JS, is a 
+  programming language that conforms to the ECMAScript specification. JavaScript 
+  is high-level, often just-in-time compiled, and multi-paradigm.`);
