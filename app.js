@@ -3,6 +3,8 @@
 // let x;
 // let y = 20;
 
+const { object } = require("firebase-functions/lib/providers/storage");
+
 // Shorthand
 let x,
   y = 20;
@@ -217,3 +219,43 @@ let obj3 = { x: 20, y: 50 };
 for (const key in obj3) {
   console.log(obj3[key]);
 }
+
+// 18.) Merging of arrays
+let arr2 = [20, 30];
+
+// Longhand
+let arr3 = arr2.concat([60, 80]);
+// [20, 30, 60, 80]
+
+// Shorthand
+let arr4 = [...arr2, 60, 80];
+// [20, 30, 60, 80]
+
+console.log(arr2, arr3);
+
+// 19.) Deep cloning of multi-level object
+let obj = { x: 20, y: { z: 30 } };
+
+//Longhand
+const makeDeepClone = (obj) => {
+  let newObject = {};
+  Object.keys(obj).map((key) => {
+    if (typeof obj[key] === "object") {
+      newObject[key] = makeDeepClone(obj[key]);
+    } else {
+      newObject[key] = obj[key];
+    }
+  });
+  return newObject;
+};
+
+const cloneObj1 = makeDeepClone(obj);
+
+// Shorthand
+const cloneObj2 = JSON.parse(JSON.stringify(obj));
+
+// Shorthand for single level object
+let obj4 = { x: 20, y: "hello" };
+const cloneObj3 = { ...obj4 };
+
+console.log(cloneObj1, cloneObj2, cloneObj3);
