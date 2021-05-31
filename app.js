@@ -132,3 +132,15 @@ if ([1, "one", 2, "two"].includes(value)) {
   // Execute some code
   console.log("Jennelyn shorthand 2");
 }
+
+// 11.) Object Property Assignment
+let firstname = "Amitav";
+let lastname = "Mishra";
+
+// Longhand
+let obj1 = { firstname: firstname, lastname: lastname };
+console.log(obj1);
+
+// Shorthand
+let obj2 = { firstname, lastname };
+console.log(obj2);
