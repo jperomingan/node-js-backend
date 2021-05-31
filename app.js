@@ -88,4 +88,13 @@ console.log(c, d);
 //Shorthand
 const add = (num1, num2) => num1 + num2;
 
-console.log(add);
+console.log(add(4, 5));
+
+// 8.) Template Literals
+let number = 3;
+let time = "2pm";
+// Longhand
+console.log("You got a missed call from " + number + " at " + time);
+
+// Shorthand
+console.log("You got a missed call from " + number + " at " + time);
