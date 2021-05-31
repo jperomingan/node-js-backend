@@ -144,3 +144,44 @@ console.log(obj1);
 // Shorthand
 let obj2 = { firstname, lastname };
 console.log(obj2);
+
+// 12.) String into a Number
+// Longhand
+// let total = parseInt("453");
+// let average = parseFloat("42.6");
+
+// Shorthand
+let total = +"453";
+let average = +"42.6";
+
+console.log(total, average);
+
+// 13.) Repeat a string for multiple times
+// Longhand
+let str = "";
+for (let i = 0; i < 5; i++) {
+  str += "Hello ";
+}
+console.log(str); //
+
+// Shorthand
+"Hello ".repeat(5);
+console.log("Hello ".repeat(5));
+
+// 14.) Exponent Power
+// Longhand
+const power1 = Math.pow(4, 3); // 64
+
+// Shorthand
+const power2 = 4 ** 3; // 64
+
+console.log(power1, power2);
+
+// 15.) Double NOT bitwise operator (~ ~)
+// Longhand
+const floor1 = Math.floor(6.8); //6
+
+// Shorthand
+const floor2 = ~~6.8; // 6
+
+console.log(floor1, floor2);
