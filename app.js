@@ -78,3 +78,14 @@ d = 55;
 [c, d] = [d, c];
 
 console.log(c, d);
+
+// 7.) Arrow Function
+// Longhand
+// function add(num1, num2) {
+//   return num1 + num2;
+// }
+
+//Shorthand
+const add = (num1, num2) => num1 + num2;
+
+console.log(add);
