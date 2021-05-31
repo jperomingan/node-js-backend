@@ -113,3 +113,22 @@ console.log(
 console.log(`JavaScript, often abbreviated as JS, is a 
   programming language that conforms to the ECMAScript specification. JavaScript 
   is high-level, often just-in-time compiled, and multi-paradigm.`);
+
+// 10.) Multiple condition checking
+// Longhand
+let value = 1;
+if (value === 1 || value === "one" || value === 2 || vaue === "two") {
+  // Execute some code
+}
+
+// Shorthand 1
+if ([1, "one", 2, "two"].indexOf(value) >= 0) {
+  // Execute some code
+  console.log("Jennelyn shorthand 1");
+}
+
+// Shorthand 2
+if ([1, "one", 2, "two"].includes(value)) {
+  // Execute some code
+  console.log("Jennelyn shorthand 2");
+}
