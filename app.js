@@ -326,3 +326,5 @@ var deliveryBoy = {
 };
 
 deliveryBoy.receive();
+
+// The let keyword in ES6
