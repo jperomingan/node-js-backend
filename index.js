@@ -21,9 +21,31 @@ console.log(interestRate);
 // let lastName = null;
 // let selectedColor = "red";
 
-let person = {
-  name: "Jennelyn",
-  age: 29,
-};
+// let person = {
+//   name: "Jennelyn",
+//   age: 29,
+// };
 
-console.log(person);
+// // Dot Notation
+// person.name = "Jenn";
+
+// // Bracket Notation
+// let selection = "name";
+// person[selection] = "Peromingan";
+
+// console.log(person.name);
+
+let selectedColor = ["red", "blue"];
+selectedColor[2] = "green";
+console.log(selectedColor.length);
+
+// Performing a task
+function greet() {
+  console.log("Hello World");
+}
+greet();
+
+// Calculating a value
+const square = (number) => number * number;
+
+console.log(square(2));
