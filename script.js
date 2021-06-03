@@ -99,3 +99,54 @@ do {
 } while (i < 5);
 
 // Prints: 0 1 3 6 10
+
+// For Loop
+for (let i = 0; i < 4; i += 1) {
+  console.log(i);
+}
+
+// Output: 0, 1, 2, 3
+
+// Looping Through Arrays
+for (let i = 0; i < array.length; i++) {
+  console.log(array[i]);
+}
+
+// Output: Every item in the array
+
+// Break Keyword
+for (let i = 0; i < 99; i += 1) {
+  if (i > 5) {
+    break;
+  }
+  console.log(i);
+}
+
+// Output: 0 1 2 3 4 5
+
+for (let outer = 0; outer < 2; outer += 1) {
+  for (let inner = 0; inner < 3; inner += 1) {
+    console.log(`${outer}-${inner}`);
+  }
+}
+
+/* 
+  Output:
+  0-0
+  0-1
+  0-2
+  1-0
+  1-1
+  1-2
+  */
+
+//   Functions Assigned to Variables
+let plusFive = (number) => number + 5;
+// if is assigned the value of plusFive
+let f = plusFive;
+
+plusFive(3); // 8
+// Since f has a function value, it can be invoked.
+f(9); // 14
+
+console.log(f(9));
